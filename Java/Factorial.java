@@ -5,13 +5,13 @@ import java.util.Scanner;
  */
 public class Factorial {
 
-    static int factorial(int a) {
-        if (a==0 || a==1) {
+    static int factorial(int number) {
+        if (number==0 || number==1) {
             return 1;
         }
-        else {
-            return factorial(a-1)*a;
-        }
+
+         int val= factorial(number-1)*number;
+         return val;
     }
 
     public static void main(String[] args) {
